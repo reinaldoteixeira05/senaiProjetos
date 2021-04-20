@@ -61,7 +61,6 @@ function menu(){
 
 function contra_usuario(){
     var pensei=Math.floor(Math.random() * dif+ 1)
-    console.log(pensei)
     var usuario1=prompt("Digite o nome do 1º Jogador")
     var usuario2=prompt("Digite o nome do 2º Jogador")
     var tentativaUsuario1=0
@@ -109,7 +108,6 @@ do{
 }
 function contra_computador(){
     var pensei=Math.floor(Math.random() * dif+ 1)
-    console.log(pensei)
     var usuario1=prompt("Digite o nome do Jogador")
     var optmusPrime
     var tentativaUsuario1=0
