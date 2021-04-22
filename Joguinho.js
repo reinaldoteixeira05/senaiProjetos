@@ -171,5 +171,6 @@ function exibir_ranking(ranking){
 
 }
 // tentando entender pq ta bugado o codigo 
+// vamos la funciona amigo
 menu()
 
