@@ -1,5 +1,6 @@
 var dif=0 
 var ranking=[]
+var medalhas=["🥇","🥈","🥉"]
 function menu(){
     var opcao=Number(prompt("Bem Vindo ao Jogo para jogar selecione umas da opções abaixo \n 1-Contra uma Pessoa \n 2-contra o computador \n 3-Para ler as Regras \n 4-Exibir o Ranking \n 5-Para sair"))
     switch(opcao){
@@ -163,10 +164,17 @@ function exibir_ranking(ranking){
     }
     }
     var posicao=1
+    var medals=0
     for(k=0;k<ranking.length;k++){
-        console.log("Na "+posicao+"º "+"Posição: "+ranking[k].nome)
+        if(medals!==3){
+        console.log("Na "+posicao+"º Posição: "+ranking[k].nome+" "+medalhas[medals])
+        }
+        if(medals===3){
+            console.log("Na "+posicao+"º Posição: "+ranking[k].nome+" "+" 🏆")
+        }
         console.log("Tentativas: "+ranking[k].tentativas)
         posicao++
+        medals++
     }
 
 }
